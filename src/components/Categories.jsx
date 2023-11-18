@@ -4,7 +4,7 @@ import Category from "./Category";
 
 const Categories = ({ categories }) => {
   return (
-    <View className="mt-8 flex-1">
+    <View className="mt-8 flex-1 mb-14">
       <Text className="text-lg font-medium mb-4">Browse by category</Text>
       <View className="flex flex-row flex-wrap gap-6 justify-between">
         {categories?.map((category, index) => (

@@ -19,7 +19,7 @@ const SearchBar = ({
 }) => {
   return (
     <AvoidKeyboard>
-      <View className="relative mx-6 pb-3">
+      <View className="relative mx-6 pb-3 mt-2">
         <TextInput
           onChangeText={setCurrentSearch}
           placeholder="Search item..."
