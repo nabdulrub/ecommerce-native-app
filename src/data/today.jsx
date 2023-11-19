@@ -1,0 +1,38 @@
+export const todayExpenses = [
+  {
+    title: "budwiser",
+    amount: 800,
+    reason: null,
+    paymentType: "cash",
+    yearWeek: 46,
+    year: 2023,
+    date: 1700360747988,
+  },
+  {
+    title: "redbull",
+    amount: 150,
+    reason: null,
+    paymentType: "cash",
+    yearWeek: 46,
+    year: 2023,
+    date: 1700360747988,
+  },
+  {
+    title: "budwiser",
+    amount: 800,
+    reason: null,
+    paymentType: "cash",
+    yearWeek: 46,
+    year: 2023,
+    date: 1700360747988,
+  },
+  {
+    title: "budwiser",
+    amount: 800,
+    reason: null,
+    paymentType: "cash",
+    yearWeek: 46,
+    year: 2023,
+    date: 1700360747988,
+  },
+];

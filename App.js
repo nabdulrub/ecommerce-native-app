@@ -2,10 +2,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native";
 import Navigation from "./src/components/Navigation";
-import BrowseScreen from "./src/screens/BrowseScreen";
-import HomeScreen from "./src/screens/HomeScreen";
-import CartScreen from "./src/screens/CartScreen";
-import ProfileScreen from "./src/screens/ProfileScreen";
+import TodayScreen from "./src/screens/TodayScreen";
+import TeamScreen from "./src/screens/TeamScreen";
+import TasksScreen from "./src/screens/TasksScreen";
+import RecentScreen from "./src/screens/RecentScreen";
+import AnalyticsScreen from "./src/screens/AnalyticsScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 export default function App() {
@@ -16,36 +17,43 @@ export default function App() {
       <SafeAreaView className="relative flex-1">
         <StatusBar style="auto" />
         <Tab.Navigator
+          initialRouteName="Today"
           screenOptions={{
             headerShown: false,
           }}
           tabBar={(props) => <Navigation {...props} />}
         >
           <Tab.Screen
-            name="Browse"
-            component={BrowseScreen}
+            name="Recent"
+            component={RecentScreen}
             options={{
               headerShown: false,
             }}
           />
           <Tab.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{
-              headerShown: false,
-            }}
-          />
-
-          <Tab.Screen
-            name="Cart"
-            component={CartScreen}
+            name="Team"
+            component={TeamScreen}
             options={{
               headerShown: false,
             }}
           />
           <Tab.Screen
-            name="Profile"
-            component={ProfileScreen}
+            name="Today"
+            component={TodayScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Tab.Screen
+            name="Tasks"
+            component={TasksScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Tab.Screen
+            name="Analytics"
+            component={AnalyticsScreen}
             options={{
               headerShown: false,
             }}

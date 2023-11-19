@@ -5,7 +5,7 @@ import SearchHistory from "../components/SearchHistory";
 import Categories from "../components/Categories";
 import { foodCategories } from "../data/categories";
 
-const BrowseScreen = ({ navigation }) => {
+const TodayScreen = ({ navigation }) => {
   const [isSearching, setIsSearching] = useState(false);
   const [categories] = useState(foodCategories);
 
@@ -63,4 +63,4 @@ const BrowseScreen = ({ navigation }) => {
   );
 };
 
-export default BrowseScreen;
+export default TodayScreen;
